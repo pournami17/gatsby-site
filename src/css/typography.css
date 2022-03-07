@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "MessinaSansWeb-Regular";
+    src: local("MessinaSansWeb-Regular"),
+     url("../fonts/messina/MessinaSansWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "MessinaSansWeb-Light";
+    src: local("MessinaSansWeb-Light"),
+        url("../fonts/messina/MessinaSansWeb-Light.woff") format("woff");
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "MessinaSansWeb-Regular";
+}

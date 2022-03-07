@@ -1,16 +1,33 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-
+import logo from '../images/logo.svg';
+import '../css/typography.css';
+import * as styles from "./layout.module.css";
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <title>{pageTitle}</title>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
-      </nav>
+      
+      <header>
+          <div className={styles.headerWrapper}>
+              <div className={styles.headerLeft}>
+                  <div className={styles.logoWrap}>
+                      <Link to="/">
+                          <img className="home-logo" src={logo} alt="site logo" />
+                      </Link>
+                  </div>
+              </div>
+              <nav className={styles.headerRight}>
+                <ul>
+                  <li><Link to="/area">Area</Link></li>
+                  <li><Link to="/offerings">Offerings</Link></li>
+                  <li><Link to="/plans">Plans</Link></li>
+                  <li><Link to="/details">Details</Link></li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+
       <main>
         <h1>{pageTitle}</h1>
         {children}
