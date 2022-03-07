@@ -1,8 +1,9 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import logo from '../images/logo.svg';
-import '../css/typography.css';
-import * as styles from "./layout.module.css";
+import '../css/typography.css'
+import * as styles from "./layout.module.css"
+import { StaticImage } from 'gatsby-plugin-image'
+
 const Layout = ({ pageTitle, children }) => {
   return (
     <div className={styles.container}>
@@ -13,7 +14,11 @@ const Layout = ({ pageTitle, children }) => {
               <div className={styles.headerLeft}>
                   <div className={styles.logoWrap}>
                       <Link to="/">
-                          <img className="home-logo" src={logo} alt="site logo" />
+                          {/* <img className="home-logo" src={logo} alt="site logo" /> */}
+                          <StaticImage className="home-logo"
+                            alt="site logo"
+                            src="../images/logo.svg"
+                          />
                       </Link>
                   </div>
               </div>
