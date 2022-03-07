@@ -6,12 +6,9 @@ import Layout from '../components/layout'
 const Area = () => {
   return (
     
-    <main>
         <Layout pageTitle="Area">
             <p>Area</p>
         </Layout>
-      
-    </main>
   )
 }
 // Step 3: Export your component

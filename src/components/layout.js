@@ -1,14 +1,29 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import '../css/typography.css'
 import * as styles from "./layout.module.css"
 import { StaticImage } from 'gatsby-plugin-image'
 
 const Layout = ({ pageTitle, children }) => {
+
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          description
+          title
+        }
+      }
+    }
+  `)
+
+  console.log(data)
+
+
   return (
     <div className={styles.container}>
-      <title>{pageTitle}</title>
-      
+      <title>{pageTitle} | {data.site.siteMetadata.title} </title>
+      <div>{data.site.siteMetadata.description}</div>
       <header>
           <div className={styles.headerWrapper}>
               <div className={styles.headerLeft}>

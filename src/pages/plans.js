@@ -6,12 +6,10 @@ import Layout from '../components/layout'
 const Plans = () => {
   return (
     
-    <main>
         <Layout pageTitle="Plans">
             <p>Plans</p>
         </Layout>
       
-    </main>
   )
 }
 // Step 3: Export your component

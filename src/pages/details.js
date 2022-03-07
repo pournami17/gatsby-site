@@ -6,13 +6,11 @@ import Layout from '../components/layout'
 const Details = () => {
   return (
     
-    <main>
         <Layout pageTitle="Details">
             <p>Details</p>
         </Layout>
-      
-    </main>
-  )
+
+    )
 }
 // Step 3: Export your component
 export default Details
