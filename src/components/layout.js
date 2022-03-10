@@ -17,9 +17,6 @@ const Layout = ({ pageTitle, children }) => {
     }
   `)
 
-  console.log(data)
-
-
   return (
     <div className={styles.container}>
       <title>{pageTitle} | {data.site.siteMetadata.title} </title>
