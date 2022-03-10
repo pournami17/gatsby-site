@@ -43,6 +43,8 @@ const Layout = ({ pageTitle, children }) => {
                   <li><Link to="/offerings">Offerings</Link></li>
                   <li><Link to="/plans">Plans</Link></li>
                   <li><Link to="/details">Details</Link></li>
+                  <li><Link to="/blog">Blog</Link>
+          </li>
                   </ul>
               </nav>
           </div>
